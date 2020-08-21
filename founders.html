@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="founders.css">
+  <title>NeoTech</title>
+</head>
+<body onload="myFunction()">
+  <div id="loading"></div>
+  <header>
+    <a href="index.html" class="logo">NeoTech Club</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founders.html">Founders</a></li>
+      <li><a href="coursesoffered.html">Courses Offered</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </header>
+  <section class="banner">    
+  </section>
+  <script type="text/javascript">
+
+    var preloader = document.getElementById('loading');
+
+    function myFunction(){
+      preloader.style.display = 'none';
+    }
+
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
+</body>
+</html>
